@@ -7,9 +7,9 @@ const puppeteer = require('puppeteer');
 router.get('/', function (req, res, next) {
 
   (async () => {
-    //const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch();
     //Opcion ver acciones
-    const browser = await puppeteer.launch({headless: false});
+    //const browser = await puppeteer.launch({headless: false});
 
     const page = await browser.newPage();
   
