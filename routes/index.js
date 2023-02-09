@@ -16,7 +16,7 @@ router.get('/', function (req, res, next) {
     await page.goto('https://www.amazon.com.mx/');
     
     //captura pantalla
-    await page.screenshot({path: 'test.jpg'});
+    await page.screenshot({path: './public/images/test.jpg'});
 /* 
     //Escribir en input
     await page.type('#twotabsearchtextbox', 'ryzen 9 7600');
@@ -65,7 +65,7 @@ router.get('/', function (req, res, next) {
     /* array.forEach(element => {
       
     }); */
-    res.render(index,{title: "test.jpg"})
+    res.render('index',{title: "test.jpg"})
     await browser.close();
   })();
 });
