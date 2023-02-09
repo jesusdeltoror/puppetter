@@ -17,7 +17,7 @@ router.get('/', function (req, res, next) {
     
     //captura pantalla
     await page.screenshot({path: 'test.jpg'});
-
+/* 
     //Escribir en input
     await page.type('#twotabsearchtextbox', 'ryzen 9 7600');
     await page.screenshot({path: 'test2.jpg'});
@@ -61,11 +61,11 @@ router.get('/', function (req, res, next) {
     }
     
     console.log(procesadores);
-
+ */
     /* array.forEach(element => {
       
     }); */
-
+    res.render(index,{title: "test.jpg"})
     await browser.close();
   })();
 });
