@@ -13,6 +13,7 @@ router.get('/', function (req, res, next) {
 
     const page = await browser.newPage();
   
+    console.log("---------------------------------------------------ok");
     await page.goto('https://www.amazon.com.mx/');
     
     //captura pantalla
